@@ -159,7 +159,13 @@ public class Cat {
 
     public char getSex(){return sex;}
 
-    public void setSex(char sex){this.sex = sex;}
+    public void setSex(char sex){
+        if(sex == 'u' || sex == 'f' || sex == 'm'){
+            this.sex = sex;
+        }else{
+            System.out.println("\n!Invalid Sex Value!\n");
+        }
+    }
 
     public String getName(){return name;}
 
